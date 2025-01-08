@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <!-- Grid Container -->
+  <div class="grid grid-cols-4 grid-rows-3 gap-4 bg-white p-6 rounded-md shadow-md">
+    <!-- Item 1: Spanning multiple columns -->
+    <div class="bg-blue-300 col-span-2 p-4 text-center">
+      col-span-2
+    </div>
+
+    <!-- Item 2: Starting at a specific column -->
+    <div class="bg-green-300 col-start-4 p-4 text-center">
+      col-start-4
+    </div>
+
+    <!-- Item 3: Ending at a specific column -->
+    <div class="bg-yellow-300 col-end-4 p-4 text-center">
+      col-end-4
+    </div>
+
+    <!-- Item 4: Spanning multiple rows -->
+    <div class="bg-red-300 row-span-2 p-4 text-center">
+      row-span-2
+    </div>
+
+    <!-- Item 5: Starting at a specific row -->
+    <div class="bg-purple-300 row-start-2 p-4 text-center">
+      row-start-2
+    </div>
+
+    <!-- Item 6: Ending at a specific row -->
+    <div class="bg-indigo-300 row-end-4 p-4 text-center">
+      row-end-4
+    </div>
+
+    <!-- Item 7: Using gaps -->
+    <div class="bg-pink-300 gap-2 p-4 text-center">
+      gap example
+    </div>
+
+    <!-- Item 8: Column gap -->
+    <div class="bg-teal-300 gap-x-4 p-4 text-center">
+      gap-x-4
+    </div>
+
+    <!-- Item 9: Row gap -->
+    <div class="bg-orange-300 gap-y-4 p-4 text-center">
+      gap-y-4
+    </div>
+
+    <!-- Combined Example -->
+    <div class="bg-gray-300 col-span-2 row-span-2 col-start-3 row-start-2 p-4 text-center">
+      Combined Example
+    </div>
+  </div>
+
+</body>
+</html>
